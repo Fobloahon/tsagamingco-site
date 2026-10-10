@@ -1,0 +1,23 @@
+:root{--bg:#0d0d0f;--panel:#16161a;--line:#2c2a27;--text:#e9e4dc;--soft:#a39d93;--amber:#f0a83a;--rust:#c4542e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 "Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--amber)}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);background:linear-gradient(180deg,#1b1914,#0d0d0f)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px;flex-wrap:wrap}
+.logo{font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);text-decoration:none;font-size:18px}
+nav a{color:var(--soft);text-decoration:none;margin-left:18px;font-size:14px;letter-spacing:.05em}
+nav a:hover{color:var(--text)}
+.hero{padding:72px 0 48px}
+.tag{display:inline-block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--rust);border:1px solid var(--rust);padding:3px 10px;border-radius:3px}
+h1{font-size:44px;line-height:1.1;margin:18px 0 12px;letter-spacing:.02em}
+h2{font-size:22px;margin:40px 0 10px;color:var(--amber)}
+h3{font-size:17px;margin:26px 0 6px}
+.lead{font-size:19px;color:var(--soft);max-width:640px}
+.card{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:6px;padding:22px 24px;margin:28px 0}
+.card h2{margin-top:0}
+.muted{color:var(--soft);font-size:14px}
+footer{border-top:1px solid var(--line);margin-top:64px;padding:24px 0;color:var(--soft);font-size:14px}
+.policy ul{padding-left:20px}
+.lang{font-size:14px;color:var(--soft)}
+@media (max-width:560px){h1{font-size:32px}nav a{margin-left:12px}}
