@@ -1,38 +1,253 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>TSA Gaming Co.</title>
-<meta name="description" content="TSA Gaming Co. — bağımsız mobil oyun stüdyosu. Foundry Front yakında Google Play'de.">
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TSA Games · Foundry Front</title>
+<meta name="description" content="TSA Games creates worlds, for fun. Foundry Front: build an army from scrap. Launching November 1 on Android.">
+<meta property="og:title" content="TSA Games · Foundry Front">
+<meta property="og:description" content="We create worlds. For fun. Foundry Front launches November 1 on Android.">
+<meta property="og:image" content="images/ozellik_1.jpg">
+<link rel="icon" href="images/tsa_logo_hd.webp" type="image/webp">
+<style>html{scroll-behavior:smooth}img{max-width:100%}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&amp;family=Saira+Condensed:wght@500;600;700;800&amp;family=Archivo:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#1B1F23}
+a{color:#F2E6CC}a:hover{color:#E8B94A}
+.nav-link{color:#F2E6CC;text-decoration:none;padding:12px 6px;border-bottom:2px solid transparent}
+.nav-link:hover{color:#E8B94A;border-bottom-color:#E8B94A}
+.btn-hot{transition:transform .15s ease, box-shadow .15s ease}
+.btn-hot:hover{transform:translateY(-2px);box-shadow:0 0 0 2px #0E0F10,0 0 0 4px #F0912A,0 10px 30px rgba(240,145,42,.35);color:#1A0E04}
+.btn-steel:hover{background:#2A2D31;color:#FFFFFF}
+.shot{transition:transform .25s ease}
+.shot:hover{transform:translateY(-6px) rotate(-0.6deg)}
+.hazard{background:repeating-linear-gradient(-45deg,#E3B92E 0 26px,#141516 26px 52px)}
+.robot-glow{background:radial-gradient(closest-side,rgba(240,145,42,.32),rgba(240,145,42,0))}
+.logo-glow{background:radial-gradient(closest-side,rgba(217,169,58,.20),rgba(217,169,58,0))}
+.tsa-logo{filter:drop-shadow(0 24px 48px rgba(0,0,0,.45))}
+</style>
 </head>
 <body>
-<header><div class="wrap">
-  <a class="logo" lang="en" href="index.html">TSA Gaming Co.</a>
-  <nav><a href="#oyunlar">Oyunlar</a><a href="gizlilik.html">Gizlilik</a><a href="#iletisim">İletişim</a></nav>
-</div></header>
+<div style="font-family: 'Archivo', system-ui, sans-serif; color: #F2E6CC; background: #1B1F23; overflow: hidden">
 
-<main class="wrap">
-  <section class="hero">
-    <span class="tag">Bağımsız oyun stüdyosu</span>
-    <h1>Fabrikanı kur.<br>Ordunu üret.<br>Sektörü ele geçir.</h1>
-    <p class="lead">TSA Gaming Co., İstanbul'da kurulmuş bağımsız bir mobil oyun stüdyosudur. Strateji ve üretim odaklı oyunlar geliştiriyoruz.</p>
+  <!-- ============ NAV ============ -->
+  <header style="max-width: 1320px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+    <a href="#top" style="font-family: 'Caveat Brush', cursive; font-size: 30px; letter-spacing: 1px; text-decoration: none; color: #F2E6CC">TSA <span style="color: #D9A93A">GAMES</span></a>
+    <nav aria-label="Main menu" style="display: flex; flex-wrap: wrap; gap: 24px; font-size: 15px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase">
+      <a class="nav-link" href="#games">Games</a>
+      <a class="nav-link" href="#gameplay">Gameplay</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ============ TSA HERO ============ -->
+  <section id="top" style="position: relative; padding: 24px 24px 104px; display: flex; flex-direction: column; align-items: center; text-align: center">
+    <div class="logo-glow" aria-hidden="true" style="position: absolute; left: 50%; top: 0; width: 1200px; height: 1000px; transform: translateX(-50%); pointer-events: none"></div>
+    <img class="tsa-logo" src="images/tsa_logo_hd.webp" alt="TSA Gaming logo: a cubist portrait of orange and blue half-faces under a gold crown" style="position: relative; width: 100%; max-width: 470px; height: auto; display: block; margin-top: 16px">
+    <p style="position: relative; margin: 32px 0 0; font-family: 'Caveat Brush', cursive; font-size: clamp(44px, 6.5vw, 80px); line-height: 1.05; color: #F2E6CC">We create <span style="color: #E8622A">worlds.</span> For <span style="color: #5B86F0">fun.</span></p>
+    <p style="position: relative; margin: 20px 0 0; max-width: 620px; font-size: 18px; line-height: 1.6; color: #C9C1AE">TSA Games is a game studio. Right now every bit of our energy goes into one place: a factory rising from the scrapyards.</p>
+    <a href="#games" style="position: relative; margin-top: 44px; display: inline-flex; flex-direction: column; align-items: center; gap: 10px; text-decoration: none; color: #F2E6CC; font-size: 13px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase">
+      In development
+      <span style="font-family: 'Saira Condensed', sans-serif; font-size: 28px; font-weight: 800; letter-spacing: 4px; color: #F0912A">FOUNDRY FRONT</span>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F0912A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M6 13l6 6 6-6"></path></svg>
+    </a>
   </section>
 
-  <section id="oyunlar" class="card">
-    <h2>Foundry Front</h2>
-    <p>Hurdadan robot fabrikası kurduğun, robotlarını tasarlayıp ürettiğin, sektörleri keşfedip diğer oyuncuların fabrikalarına saldırdığın bir strateji oyunu. Division'ına katıl, anomalilere karşı savaş, Büyük Yürüyüş'e hazırlan.</p>
-    <p class="muted">Platform: Android • Durum: geliştiriliyor, yakında Google Play'de</p>
-  </section>
+  <!-- painted band (TSA) -> hazard band (Foundry Front) -->
+  <div aria-hidden="true" style="display: flex; height: 18px">
+    <div style="flex: 3; background: #E8622A"></div>
+    <div style="flex: 2; background: #F2E6CC"></div>
+    <div style="flex: 3; background: #2F5FD0"></div>
+    <div style="flex: 1; background: #D9A93A"></div>
+  </div>
+  <div class="hazard" aria-hidden="true" style="height: 22px"></div>
 
-  <section id="iletisim">
-    <h2>İletişim</h2>
-    <p>Destek, geri bildirim ve iş birlikleri için: <a href="mailto:tsagamingco@gmail.com">tsagamingco@gmail.com</a></p>
-    <p class="lang">English: TSA Gaming Co. is an independent mobile game studio based in Istanbul, Türkiye. Our first game, <strong>Foundry Front</strong>, is coming soon to Google Play. Contact: <a href="mailto:tsagamingco@gmail.com">tsagamingco@gmail.com</a></p>
-  </section>
-</main>
+  <!-- ============ FOUNDRY FRONT ============ -->
+  <main id="games" style="background: #0E0F10; color: #E7E4DE; font-family: 'Archivo', system-ui, sans-serif">
 
-<footer><div class="wrap">© 2026 TSA Gaming Co. • <a href="gizlilik.html">Gizlilik Politikası / Privacy Policy</a></div></footer>
+    <!-- key art -->
+    <div style="position: relative">
+      <img src="images/ozellik_1.jpg" alt="Foundry Front key art: UNIT 07 standing in a rainy scrapyard beside the metal Foundry Front emblem" style="display: block; width: 100%; height: auto; max-height: 760px; object-fit: cover; object-position: center 40%">
+    </div>
+
+    <section style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 96px; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-end; justify-content: space-between">
+      <div style="flex: 999 1 560px; min-width: 0">
+        <p style="margin: 0 0 14px; font-size: 13px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #F0912A">TSA Games presents · Mobile strategy</p>
+        <h1 style="margin: 0; font-family: 'Saira Condensed', sans-serif; font-weight: 800; font-size: clamp(56px, 8vw, 112px); line-height: .92; letter-spacing: -1px; text-transform: uppercase; color: #F4F1EA">Build an army<br>from scrap.</h1>
+        <p style="margin: 28px 0 0; max-width: 640px; font-size: 19px; line-height: 1.65; color: #B9B6AF">Send your robots to the mines, hunt down stray machines, patch up the wounded. When the mine runs dry, pack up your factory and roll it into a new sector. In Foundry Front every bolt is a resource and every sector is a front line.</p>
+      </div>
+      <div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 14px">
+        <a class="btn-hot" href="#contact" style="display: flex; align-items: center; justify-content: center; min-height: 64px; padding: 0 28px; background: #F0912A; color: #1A0E04; text-decoration: none; font-family: 'Saira Condensed', sans-serif; font-weight: 800; font-size: 24px; letter-spacing: 2px; text-transform: uppercase; border: 2px solid #FFB25C; border-radius: 6px">Get notified</a>
+        <a class="btn-steel" href="#gameplay" style="display: flex; align-items: center; justify-content: center; min-height: 56px; padding: 0 28px; background: #1A1C1F; color: #E7E4DE; text-decoration: none; font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: 2px; text-transform: uppercase; border: 1px solid #3A3D42; border-radius: 6px">See the gameplay</a>
+        <p style="margin: 4px 0 0; font-size: 15px; font-weight: 600; letter-spacing: 1px; color: #B9B6AF; text-align: center">Launching <span style="color: #F0912A">November 1</span> · Android</p>
+      </div>
+    </section>
+
+    <!-- ============ UNIT 07 ============ -->
+    <section style="border-top: 1px solid #22252A; border-bottom: 1px solid #22252A; background: #121315">
+      <div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+        <div style="position: relative; flex: 1 1 420px; display: flex; justify-content: center; min-width: 0">
+          <div class="robot-glow" aria-hidden="true" style="position: absolute; inset: -40px; pointer-events: none"></div>
+          <img src="images/unit07_cut.png" alt="UNIT 07: an orange and grey retro worker robot with goggles" style="position: relative; width: 100%; max-width: 440px; height: auto; display: block">
+        </div>
+        <div style="flex: 999 1 480px; min-width: 0">
+          <p style="margin: 0 0 14px; font-size: 13px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #F0912A">Meet</p>
+          <h2 style="margin: 0; font-family: 'Saira Condensed', sans-serif; font-weight: 800; font-size: clamp(48px, 6vw, 84px); line-height: .95; text-transform: uppercase; color: #F4F1EA">UNIT 07</h2>
+          <p style="margin: 24px 0 0; max-width: 560px; font-size: 19px; line-height: 1.65; color: #B9B6AF">Mass-produced, rusty, stubborn. These little workers are the backbone of your factory: they dig, haul, hunt and hold the gate when it counts. Fit modules, repair them, give them a name.</p>
+          <div style="margin-top: 36px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; max-width: 560px">
+            <div style="padding: 16px 18px; background: #1A1C1F; border: 1px solid #34373C; border-radius: 6px">
+              <div style="font-size: 12px; font-weight: 700; letter-spacing: 2px; color: #8D8A84">MIGHT</div>
+              <div style="margin-top: 4px; font-family: 'Saira Condensed', sans-serif; font-weight: 800; font-size: 40px; color: #7EE08A">50</div>
+            </div>
+            <div style="padding: 16px 18px; background: #1A1C1F; border: 1px solid #34373C; border-radius: 6px">
+              <div style="font-size: 12px; font-weight: 700; letter-spacing: 2px; color: #8D8A84">POWER</div>
+              <div style="margin-top: 4px; font-family: 'Saira Condensed', sans-serif; font-weight: 800; font-size: 40px; color: #7EE08A">100%</div>
+            </div>
+            <div style="padding: 16px 18px; background: #1A1C1F; border: 1px solid #34373C; border-radius: 6px">
+              <div style="font-size: 12px; font-weight: 700; letter-spacing: 2px; color: #8D8A84">MODULES</div>
+              <div style="margin-top: 4px; font-family: 'Saira Condensed', sans-serif; font-weight: 800; font-size: 40px; color: #F0912A">0/1</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GAMEPLAY LOOP ============ -->
+    <section id="gameplay" style="max-width: 1320px; margin: 0 auto; padding: 112px 24px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 56px">
+        <h2 style="margin: 0; font-family: 'Saira Condensed', sans-serif; font-weight: 800; font-size: clamp(44px, 5.5vw, 76px); line-height: .95; text-transform: uppercase; color: #F4F1EA">Mine. Hunt.<br>Repair. Grow.</h2>
+        <p style="margin: 0; max-width: 440px; font-size: 18px; line-height: 1.6; color: #B9B6AF">Run the whole sector from the Command Center. Every loop makes your factory a little stronger, and a little more dangerous.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px">
+
+        <article style="display: flex; flex-direction: column; gap: 18px">
+          <img class="shot" src="images/1_radar.jpg" alt="Operations screen: radar, idle robots and the scan button" style="width: 100%; aspect-ratio: 9 / 16; object-fit: cover; object-position: top; display: block; border-radius: 22px; border: 6px solid #26292E; background: #000">
+          <div>
+            <div style="font-family: 'Saira Condensed', sans-serif; font-weight: 800; font-size: 18px; letter-spacing: 3px; color: #F0912A">01 · MINE</div>
+            <p style="margin: 8px 0 0; font-size: 16px; line-height: 1.55; color: #B9B6AF">Scan the sector for scrap zones and ruins. Tap an idle robot and send it to dig.</p>
+          </div>
+        </article>
+
+        <article style="display: flex; flex-direction: column; gap: 18px">
+          <img class="shot" src="images/2_hunt.jpg" alt="Hunt screen: packs of STRAY robots on the radar and hunt logs" style="width: 100%; aspect-ratio: 9 / 16; object-fit: cover; object-position: top; display: block; border-radius: 22px; border: 6px solid #26292E; background: #000">
+          <div>
+            <div style="font-family: 'Saira Condensed', sans-serif; font-weight: 800; font-size: 18px; letter-spacing: 3px; color: #F0912A">02 · HUNT</div>
+            <p style="margin: 8px 0 0; font-size: 16px; line-height: 1.55; color: #B9B6AF">Release your hunters from the Attack Ramp. Take down strays, haul back scrap and rare modules.</p>
+          </div>
+        </article>
+
+        <article style="display: flex; flex-direction: column; gap: 18px">
+          <img class="shot" src="images/3_garage.jpg" alt="Garage screen: list of UNIT 07 robots with repair and module buttons" style="width: 100%; aspect-ratio: 9 / 16; object-fit: cover; object-position: top; display: block; border-radius: 22px; border: 6px solid #26292E; background: #000">
+          <div>
+            <div style="font-family: 'Saira Condensed', sans-serif; font-weight: 800; font-size: 18px; letter-spacing: 3px; color: #F0912A">03 · REPAIR</div>
+            <p style="margin: 8px 0 0; font-size: 16px; line-height: 1.55; color: #B9B6AF">Fix the damaged in the Garage, set your auto-repair threshold, fit modules or recycle.</p>
+          </div>
+        </article>
+
+        <article style="display: flex; flex-direction: column; gap: 18px">
+          <img class="shot" src="images/foundryfrontingame.jpg" alt="Factory cross-section: Command Center, Attack Ramp, Defense Systems and Garage floors" style="width: 100%; aspect-ratio: 9 / 16; object-fit: cover; object-position: top; display: block; border-radius: 22px; border: 6px solid #26292E; background: #000">
+          <div>
+            <div style="font-family: 'Saira Condensed', sans-serif; font-weight: 800; font-size: 18px; letter-spacing: 3px; color: #F0912A">04 · GROW</div>
+            <p style="margin: 8px 0 0; font-size: 16px; line-height: 1.55; color: #B9B6AF">Command Center, Attack Ramp, Defense Systems, Garage. Upgrade your factory floor by floor.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ FORTRESS + COLOSSAL ============ -->
+    <section style="background: #121315; border-top: 1px solid #22252A">
+      <div style="max-width: 1320px; margin: 0 auto; padding: 112px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px">
+
+        <article style="display: flex; flex-direction: column; gap: 24px">
+          <img src="images/door.jpg" alt="Foundry Front: a giant tracked mobile factory with turrets and an emblem-marked door, inside a rocky cavern" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 45%; display: block; border-radius: 10px">
+          <div>
+            <p style="margin: 0 0 10px; font-size: 13px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #F0912A">Your base moves with you</p>
+            <h3 style="margin: 0; font-family: 'Saira Condensed', sans-serif; font-weight: 800; font-size: clamp(36px, 4vw, 52px); line-height: 1; text-transform: uppercase; color: #F4F1EA">A fortress on tracks</h3>
+            <p style="margin: 16px 0 0; max-width: 520px; font-size: 18px; line-height: 1.6; color: #B9B6AF">Mine depleted? Pack up Foundry Front and drive it to a new sector. Your robots, your machines, everything you have earned rides behind that door.</p>
+          </div>
+        </article>
+
+        <article style="display: flex; flex-direction: column; gap: 24px">
+          <img src="images/Colossal.jpg" alt="A colossal machine built from radiators, gears and scrap, towering over a burning city" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 30%; display: block; border-radius: 10px">
+          <div>
+            <p style="margin: 0 0 10px; font-size: 13px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #F0912A">Foundry Front · Machines</p>
+            <h3 style="margin: 0; font-family: 'Saira Condensed', sans-serif; font-weight: 800; font-size: clamp(36px, 4vw, 52px); line-height: 1; text-transform: uppercase; color: #F4F1EA">Some scrap stands up</h3>
+            <p style="margin: 16px 0 0; max-width: 520px; font-size: 18px; line-height: 1.6; color: #B9B6AF">When robots aren't enough, the machines take the field. Radiator-headed, gear-armed, enormous. Will you be the one building them, or the one facing them?</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ THREATS ============ -->
+    <section style="max-width: 1320px; margin: 0 auto; padding: 104px 24px">
+      <h2 style="margin: 0 0 40px; font-family: 'Saira Condensed', sans-serif; font-weight: 800; font-size: clamp(40px, 5vw, 64px); line-height: 1; text-transform: uppercase; color: #F4F1EA">The sector is never quiet</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+        <div style="padding: 28px; background: #E3C23B; color: #17140A; border-radius: 6px; box-shadow: inset 0 0 0 3px #B8961E">
+          <div style="font-family: 'Saira Condensed', sans-serif; font-weight: 800; font-size: 30px; line-height: 1.05; text-transform: uppercase">SUP raids</div>
+          <p style="margin: 12px 0 0; font-size: 16px; line-height: 1.55; font-weight: 500">They hit your gate roughly every 6 hours. With zero defense, you have a lot to lose.</p>
+        </div>
+        <div style="padding: 28px; background: #E3C23B; color: #17140A; border-radius: 6px; box-shadow: inset 0 0 0 3px #B8961E">
+          <div style="font-family: 'Saira Condensed', sans-serif; font-weight: 800; font-size: 30px; line-height: 1.05; text-transform: uppercase">Factory wars</div>
+          <p style="margin: 12px 0 0; font-size: 16px; line-height: 1.55; font-weight: 500">You are not alone out here. Find the factories nearby, scout them, strike or defend.</p>
+        </div>
+        <div style="padding: 28px; background: #E3C23B; color: #17140A; border-radius: 6px; box-shadow: inset 0 0 0 3px #B8961E">
+          <div style="font-family: 'Saira Condensed', sans-serif; font-weight: 800; font-size: 30px; line-height: 1.05; text-transform: uppercase">Anomalies</div>
+          <p style="margin: 12px 0 0; font-size: 16px; line-height: 1.55; font-weight: 500">Announced 3 hours ahead. The prepared win; everyone else turns to scrap.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section aria-label="Gallery" style="padding: 0 24px 112px">
+      <div style="max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px">
+        <img src="images/ozellik_2.jpg" alt="UNIT 07 robots at work amid sparks on a rainy factory street" style="width: 100%; aspect-ratio: 1024 / 500; object-fit: cover; display: block; border-radius: 8px">
+        <img src="images/ozellik_3.jpg" alt="UNIT 07 carrying a large chunk of ore out of the mine" style="width: 100%; aspect-ratio: 1024 / 500; object-fit: cover; display: block; border-radius: 8px">
+        <img src="images/ozellik_4.jpg" alt="UNIT 07 standing guard at a barricade in the night rain" style="width: 100%; aspect-ratio: 1024 / 500; object-fit: cover; display: block; border-radius: 8px">
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section id="contact" style="background: #1A1C1F; border-top: 1px solid #2A2D31">
+      <div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
+        <img src="images/FFLOGO.jpg" alt="Foundry Front metal emblem" style="flex: 1 1 360px; min-width: 0; width: 100%; max-width: 520px; aspect-ratio: 1 / 1; object-fit: cover; display: block; border-radius: 10px">
+        <div style="flex: 999 1 420px; min-width: 0">
+          <h2 style="margin: 0; font-family: 'Saira Condensed', sans-serif; font-weight: 800; font-size: clamp(48px, 6vw, 88px); line-height: .95; text-transform: uppercase; color: #F4F1EA">Be first<br>on the front.</h2>
+          <p style="margin: 24px 0 0; max-width: 520px; font-size: 19px; line-height: 1.6; color: #B9B6AF">Foundry Front lands on Android on November 1. Drop us a line or follow us on YouTube for gameplay, first looks and launch news.</p>
+          <div style="margin-top: 32px; display: flex; flex-wrap: wrap; gap: 14px">
+            <a class="btn-hot" href="mailto:tsagamingco@gmail.com" style="display: inline-flex; align-items: center; min-height: 60px; padding: 0 32px; background: #F0912A; color: #1A0E04; text-decoration: none; font-family: 'Saira Condensed', sans-serif; font-weight: 800; font-size: 22px; letter-spacing: 2px; text-transform: uppercase; border: 2px solid #FFB25C; border-radius: 6px">Contact us</a>
+            <a class="btn-steel" href="https://www.youtube.com/@TSAGAMINGCO" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 12px; min-height: 60px; padding: 0 28px; background: #0E0F10; color: #E7E4DE; text-decoration: none; font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: 2px; text-transform: uppercase; border: 1px solid #3A3D42; border-radius: 6px"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="4"></rect><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor"></path></svg>YouTube</a>
+          </div>
+          <p style="margin: 20px 0 0; font-size: 15px; color: #8D8A84"><a href="mailto:tsagamingco@gmail.com" style="color: #B9B6AF">tsagamingco@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER (TSA) ============ -->
+  <div aria-hidden="true" style="display: flex; height: 8px">
+    <div style="flex: 3; background: #E8622A"></div>
+    <div style="flex: 2; background: #F2E6CC"></div>
+    <div style="flex: 3; background: #2F5FD0"></div>
+    <div style="flex: 1; background: #D9A93A"></div>
+  </div>
+  <footer style="max-width: 1320px; margin: 0 auto; padding: 48px 24px 56px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px">
+    <div style="display: flex; align-items: center; gap: 16px">
+      <img src="images/tsa_logo_hd.webp" alt="" style="width: auto; height: 96px; display: block">
+      <div>
+        <div style="font-family: 'Caveat Brush', cursive; font-size: 30px; line-height: 1">TSA <span style="color: #D9A93A">GAMES</span></div>
+        <div style="margin-top: 6px; font-size: 14px; color: #A9A190">© 2026 TSA Games. All rights reserved.</div>
+      </div>
+    </div>
+    <nav aria-label="Footer menu" style="display: flex; flex-wrap: wrap; gap: 20px; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase">
+      <a class="nav-link" href="#games">Foundry Front</a>
+      <a class="nav-link" href="https://www.youtube.com/@TSAGAMINGCO" target="_blank" rel="noopener">YouTube</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      <a class="nav-link" href="gizlilik.html">Privacy</a>
+    </nav>
+  </footer>
+</div>
 </body>
 </html>
